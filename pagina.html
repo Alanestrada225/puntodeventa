@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+      integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
+      crossorigin="anonymous"
+    />
+    <title>Abarrotera angel</title>
+    <script src="claseVenta.js"></script>
+    <script src="claseArticulo.js"></script>
+  </head>
+  <body class="p-3 mb-2 bg-primary text-white">
+  <div class="p-3 mb-2 bg-dark text-white">
+    <h1>Agregar producto</h1>
+    Nombre del producto:
+    <input type="text" id="nombre">
+    <br>
+    Costo del producto:
+    <input type="text" id="costo">
+    <br>
+    Cantidad:
+    <input type="text" id="cantidad">
+    <br>
+    Importe:
+    <div>
+      <input id="importe">
+      <button class="p-3 mb-2 bg-danger text-white" id="btnImporte">Calcular importe</button>
+    </div>
+    <button class="p-3 mb-2 bg-danger text-white" id="agregar">agregar</button>
+  </div>
+
+  Articulos ya guardados:
+  <div class="p-3 mb-2 bg-light text-dark" id="carrito">
+  </div>
+  <div class="p-3 mb-2 bg-info text-white">
+    Total venta:
+    <div id="total"></div>
+    Ingrese el dinero para pagar:
+    <input type="text">
+    <br>
+    <button class="p-3 mb-2 bg-success text-white">Pagar</button>
+  </div>
+  <div id="pago/faltante">
+  </div>
+  <script src="app.js"></script>
+  </body>
+</html>
